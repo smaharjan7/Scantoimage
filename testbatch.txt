@@ -1,0 +1,5 @@
+for %%F in (C:\Users\sanja\OneDrive\Desktop\Regis\Data Science PracticimII(MSDS 696)\Bodyscans\*.mkv) do (
+If not Exist "Frames" MkDir "Frames"
+ffmpeg -i %%F -r 1 -qscale:v 2 FramesF\Frames-%%3d.jpg
+)
+test
